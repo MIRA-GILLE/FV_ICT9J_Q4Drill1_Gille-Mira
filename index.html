@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4Practice1</title>
+</head>
+<body>
+    <h1>JavaScript Conditional Statements</h1>
+    
+    <h2>Check your Electricity Usage!</h2>
+    <br>
+    <input id="kwh" placeholder="Enter you electrical bill here" type="text">
+    <button onclick="checkkWh()">Check Bill</button>
+
+    <script>
+function checkkWh(){
+   var kwh = document.getElementById("kwh").value;
+    var v = "Lifeline Consumer";
+    var w = "Low Consumption";
+    var x = "Average Consumption";
+    var y = "High Consumption";
+    var z = "Very High Consumption";
+    
+    if (kwh <= 50){
+        alert(v + ": Lifeline consumer");
+    }
+    else if (kwh <= 100){
+        alert(v + ": Discounted electricity rates");
+    }
+    else if (kwh <= 200){
+        alert(w + ": Normal residential rate");
+    }
+    else if ( kwh <= 300){
+        alert(x + ": Typical electricity usage");
+    }
+    else if (kwh > 300 && kwh <= 400){
+        alert(y + ": Higher electricity usage");
+    }
+    else if (kwh > 400){
+        alert(z + ": Heavy electricity usage");
+    }
+   
+}
+    </script>
+</body>
+</html>
